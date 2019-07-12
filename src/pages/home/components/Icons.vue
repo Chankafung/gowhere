@@ -111,7 +111,7 @@ export default {
         background: rgba(0,175,190,.8)
     .icons
         height: 0
-        height: 3.4rem
+        height: 3.5rem
         .icon
             width: 25%
             height: 1.5rem
