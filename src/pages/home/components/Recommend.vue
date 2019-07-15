@@ -33,74 +33,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/ea/eaf1bdc38aed9e6690.img.jpg_200x200_3032bf56.jpg',
-          title: '银杏湖乐园',
-          width: '98%',
-          discuss: '3401',
-          price: '94.8',
-          area: '江宁区'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1907/df/dfe043ff2829f50ca3.img.jpg_200x200_6de74461.jpg',
-          title: '南京海底世界',
-          width: '98%',
-          discuss: '7292',
-          price: '100',
-          area: '玄武区'
-        },
-        {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1904/31/3151f5637e832d86a3.img.jpg_200x200_a19ed206.jpg',
-          title: '南京万达乐园',
-          width: '98%',
-          discuss: '625',
-          price: '138',
-          area: '栖霞区'
-        },
-        {
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/bb/538133c76765880a3d3c802e45015c57.water.jpg_200x200_169b048c.jpg',
-          title: '紫清湖生态温泉',
-          width: '98%',
-          discuss: '1805',
-          price: '107.7',
-          area: '江宁区'
-        },
-        {
-          id: '0005',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201406/04/4f597aad25208a233999238c65af9b06.jpg_200x200_d1ea2bd2.jpg',
-          title: '南京珍珠泉水上世界',
-          width: '100%',
-          discuss: '673',
-          price: '93.9',
-          area: '珍珠泉'
-        },
-        {
-          id: '0006',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/9b/9b3cbcf2624bf8cea3.img.jpg_200x200_075bc9ef.jpg',
-          title: '弘阳未来世界主题乐园',
-          width: '94%',
-          discuss: '1052',
-          price: '51',
-          area: '浦口区'
-        },
-        {
-          id: '0007',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1906/58/588b13f236575746a3.img.jpg_200x200_cb23ae6f.jpg',
-          title: '南京欢乐水魔方',
-          width: '94%',
-          discuss: '2510',
-          price: '180',
-          area: '江宁区'
-        }
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
