@@ -1,6 +1,10 @@
 <template>
   <div>
+<<<<<<< HEAD
     <city-header></city-header>
+=======
+    <city-Header></city-header>
+>>>>>>> city-router
   </div>
 </template>
 
