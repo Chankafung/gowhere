@@ -46,10 +46,10 @@ export default {
       margin-top: .14rem
       ellipsis()
     .weekend-desc
-      overflow: hidden;
-      color: #616161;
-      font-size: .24rem;
-      line-height: .42rem;
+      overflow: hidden
+      color: #616161
+      font-size: .24rem
+      line-height: .42rem
       padding-left: .2rem
       padding-bottom: .2rem
       ellipsis()
