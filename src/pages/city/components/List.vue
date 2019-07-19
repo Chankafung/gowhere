@@ -9,25 +9,13 @@
         <div class="area">
           <div class="title">热门城市</div>
           <ul class="button-list">
-            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
+            <li v-for="item of hotCities" :key="item.id">{{item.name}}</li>
           </ul>
         </div>
-        <div class="area">
-          <div class="title">A</div>
+        <div class="area" v-for="(item, key, index) in cities" :key="index">
+          <div class="title">{{key}}</div>
           <ul class="button-list">
-            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
-          </ul>
-        </div>
-        <div class="area">
-          <div class="title">A</div>
-          <ul class="button-list">
-            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
-          </ul>
-        </div>
-        <div class="area">
-          <div class="title">A</div>
-          <ul class="button-list">
-            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
+            <li v-for="city of item" :key="city.id">{{city.name}}</li>
           </ul>
         </div>
       </div>
@@ -39,58 +27,13 @@
 import Bscroll from 'better-scroll'
 export default {
   name: 'CityList',
+  props: {
+    cities: Object,
+    hotCities: Array
+  },
   data () {
     return {
-      hotList: [
-        {
-          id: '0001',
-          city: '北京'
-        },
-        {
-          id: '0002',
-          city: '上海'
-        },
-        {
-          id: '0003',
-          city: '三亚'
-        },
-        {
-          id: '0004',
-          city: '香港'
-        },
-        {
-          id: '0005',
-          city: '杭州'
-        },
-        {
-          id: '0006',
-          city: '广州'
-        },
-        {
-          id: '0007',
-          city: '成都'
-        },
-        {
-          id: '0008',
-          city: '深圳'
-        },
-        {
-          id: '0009',
-          city: '苏州'
-        },
-        {
-          id: '0010',
-          city: '桂林'
-        },
-        {
-          id: '0011',
-          city: '西安'
-        },
-        {
-          id: '0012',
-          city: '厦门'
-        }
-      ]
+
     }
   },
   mounted () {
