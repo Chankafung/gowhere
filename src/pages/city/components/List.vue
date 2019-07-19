@@ -1,39 +1,42 @@
 <template lang="html">
   <div>
-    <div class="list">
-      <div class="area">
-        <div class="title">当前城市</div>
-        <div class="button-now">南京</div>
-      </div>
-      <div class="area">
-        <div class="title">热门城市</div>
-        <ul class="button-list">
-          <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
-        </ul>
-      </div>
-      <div class="area">
-        <div class="title">A</div>
-        <ul class="button-list">
-          <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
-        </ul>
-      </div>
-      <div class="area">
-        <div class="title">A</div>
-        <ul class="button-list">
-          <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
-        </ul>
-      </div>
-      <div class="area">
-        <div class="title">A</div>
-        <ul class="button-list">
-          <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
-        </ul>
+    <div class="list" ref="wrapper">
+      <div class="content">
+        <div class="area">
+          <div class="title">当前城市</div>
+          <div class="button-now">南京</div>
+        </div>
+        <div class="area">
+          <div class="title">热门城市</div>
+          <ul class="button-list">
+            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
+          </ul>
+        </div>
+        <div class="area">
+          <div class="title">A</div>
+          <ul class="button-list">
+            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
+          </ul>
+        </div>
+        <div class="area">
+          <div class="title">A</div>
+          <ul class="button-list">
+            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
+          </ul>
+        </div>
+        <div class="area">
+          <div class="title">A</div>
+          <ul class="button-list">
+            <li v-for="item of hotList" :key="item.id">{{item.city}}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Bscroll from 'better-scroll'
 export default {
   name: 'CityList',
   data () {
@@ -89,6 +92,9 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
   }
 }
 </script>
