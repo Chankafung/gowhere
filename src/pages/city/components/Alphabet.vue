@@ -24,7 +24,8 @@ export default {
     width: .4rem
     display: flex
     flex-direction: column
-    justify-content: center;
+    justify-content: center
+    z-index: 11
     li
       color: #00bcd4
       text-align: center
