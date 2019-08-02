@@ -1,8 +1,8 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-list :cities="cities" :hotCities="hotCities"></city-list>
-    <city-alphabet :cities="cities"></city-alphabet>
+    <city-list :cities="cities" :hotCities="hotCities" :letter="letter"></city-list>
+    <city-alphabet :cities="cities" @change="handleLetterClick"></city-alphabet>
   </div>
 </template>
 
@@ -16,7 +16,8 @@ export default {
   data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     }
   },
   components: {
@@ -30,9 +31,11 @@ export default {
         .then(this.handleGetCityInfoSucc)
     },
     handleGetCityInfoSucc (res) {
-      console.log(res)
       this.cities = res.data.data.cities
       this.hotCities = res.data.data.hotCities
+    },
+    handleLetterClick (letter) {
+      this.letter = letter
     }
   },
   mounted () {
