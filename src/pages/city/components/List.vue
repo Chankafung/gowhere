@@ -55,7 +55,7 @@ export default {
   @import '~styles/mixins.styl'
   .list
     position: absolute
-    top: .88rem
+    top: 1.6rem
     left: 0
     right: 0
     bottom: 0

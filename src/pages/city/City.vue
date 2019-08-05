@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div v-cloak>
     <city-header></city-header>
+    <city-search :cities="cities"></city-search>
     <city-list :cities="cities" :hotCities="hotCities" :letter="letter"></city-list>
     <city-alphabet :cities="cities" @change="handleLetterClick"></city-alphabet>
   </div>
@@ -11,6 +12,7 @@ import axios from 'axios'
 import CityHeader from './components/Header'
 import CityList from './components/List'
 import CityAlphabet from './components/Alphabet'
+import CitySearch from './components/Search'
 export default {
   name: 'City',
   data () {
@@ -23,7 +25,8 @@ export default {
   components: {
     CityHeader,
     CityList,
-    CityAlphabet
+    CityAlphabet,
+    CitySearch
   },
   methods: {
     getCityInfo () {
@@ -45,5 +48,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+  [v-cloak]
+    display: none
 </style>

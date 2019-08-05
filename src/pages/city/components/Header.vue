@@ -1,11 +1,11 @@
 <template lang="html">
   <div>
-    <router-link to="/">
       <div class="header">
-        <span class="iconfont">&#xe624;</span>
+        <router-link to="/">
+          <span class="iconfont">&#xe624;</span>
+        </router-link>
         城市选择
       </div>
-    </router-link>
   </div>
 </template>
 
