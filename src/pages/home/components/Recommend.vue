@@ -5,27 +5,25 @@
       <span>猜你喜欢</span>
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
-        <a href="#">
-          <div class="item-img-wrapper">
-            <img class="item-img" :src="item.imgUrl" alt="">
+      <router-link tag="li" :to="'/detail/'+item.id" class="item border-bottom" v-for="item in recommendList" :key="item.id">
+        <div class="item-img-wrapper">
+          <img class="item-img" :src="item.imgUrl" alt="">
+        </div>
+        <div class="item-content-wrapper">
+          <p>{{item.title}}</p>
+          <div class="item-content-like">
+            <span class="item-like">
+              <strong class="item-like-full" :style="{width:item.width}"></strong>
+              <span class="item-like-grey"></span>
+            </span>
+            <span class="item-discuss">{{item.discuss}}条评论</span>
           </div>
-          <div class="item-content-wrapper">
-            <p>{{item.title}}</p>
-            <div class="item-content-like">
-              <span class="item-like">
-                <strong class="item-like-full" :style="{width:item.width}"></strong>
-                <span class="item-like-grey"></span>
-              </span>
-              <span class="item-discuss">{{item.discuss}}条评论</span>
-            </div>
-            <div class="item-content-price">
-              <span>￥<em>{{item.price}}</em></span>起
-              <span>{{item.area}}</span>
-            </div>
+          <div class="item-content-price">
+            <span>￥<em>{{item.price}}</em></span>起
+            <span>{{item.area}}</span>
           </div>
-        </a>
-      </li>
+        </div>
+      </router-link>
     </ul>
   </div>
 </template>
