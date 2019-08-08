@@ -1,10 +1,10 @@
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1565229894488'); /* IE9 */
-  src: url('iconfont.eot?t=1565229894488#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  src: url('./iconfont/iconfont.eot?t=1565229894488'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1565229894488#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPAAAsAAAAACBgAAANyAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDLIJtATYCJAMUCwwABCAFhG0HVBsFBxFVlNFkPwobxxKWpYwiLMW9rR+ljKLd7/Hw336s+2bmf0QkiUZtfjqJQ3NLNDKJkEmJkglFdjdvZj7/9Jqr5E3Cj8bKlwr472cXpxJbJ2Frt2ytWYFthYlQJbLo0R8kd5ydbLYwvk5XqQrZF+4PLsffsATm2VsuYy4ba2KAcUBZOPYgK5BEPYXhtS5jM4Fm4xbEdmxyNmhUmL0CcUOnVoDGjEppiA+NQl0xsQzHBFDSmF5JJwB4C74f/4B/qJJUmbnVzlkMBta/lJ9xiORIce4GaDoD+GlkLKAQT5WmGznyLMia1ebFOpo1StJUjRyf/Z9xuZyEdyBJs/WHR5IVQdTM2FawTr2FL2UHJfHliJL58hdqFuPgPMtGFWhGI57wziRMMIZMg3Jb54iBJh67r4O1Dh9LGZIjddmN7eYtVXeHZ6q8yHfS2xdaqCwJsDnnoRnD4JkdY+NcPH7ljiGmNL9voje7a1TSih0gN/Ls8DLDmDLHMKHOL+1V3d3l3t/n3d7m3NyEjDQd/GwcXTG3vL9rlDO7sLNnjLsTOTlg+fHMrkM1XLXDTi8iSs/pAkevL6hafm3Ui+DVNp8CW/UXyvPRExvvnVBAWolNQW1DljaidpGNJnjledzIldLCm/isRuNfo0Z2MI0nwTuewaMGAV9eIBMSrIAAI2GAjmBm2AQUiaDLH+cYYDJ08CeQORKw5JEmag5P9c3gmdk075E8+F0vnbA0IKH0D7t9wlwPw//ib5ys/WH7OsH/VTUK+KzeiYXiFw0zdfP5FWKd2f9MWHib8qJxTXVVFKFGbrKFQGVVHSR+T9GfsnX7m0bW9xZ8oVFfAkmDMUPWqLGBFPwCVFosQq3RGjSbd5zeooeoi9KEOW8CodMHknYfkHX6IgX/g0q/f6h1Rh2a7UZ/wRZTkfS2gp5iCP4LkoBLsrXaC+NPGLnckzQ3IN5QbGKH8WCU9x+xRJliiL1HE1UCEi7gQLbDPGcwwikGOohVzWY4pKo3DQIuKj1bBPIoFAK+F5AIsBJ51VWv8PkTFHFyHmkoq9LeIGEl9YOxgVEH5CgqO5XdyjXWXWRCKQKIYAVwIAaUWx4GTHW7FAqogXiAy9gY0krUVTRYXlK84xpoZh5dRYocJaqodVwlXqnsPBF+zFaLljpTkLfIaRm7pGXZWceVCgAA') format('woff2'),
-  url('iconfont.woff?t=1565229894488') format('woff'),
-  url('iconfont.ttf?t=1565229894488') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('iconfont.svg?t=1565229894488#iconfont') format('svg'); /* iOS 4.1- */
+  url('./iconfont/iconfont.woff?t=1565229894488') format('woff'),
+  url('./iconfont/iconfont.ttf?t=1565229894488') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont/iconfont.svg?t=1565229894488#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -30,4 +30,3 @@
 .iconsousuo:before {
   content: "\e632";
 }
-
